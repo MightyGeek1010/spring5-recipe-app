@@ -53,6 +53,8 @@ public class Recipe {
 	@Setter
 	@Lob
 	private Notes notes;
+	@Getter
+	@Setter
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe")
 	private List<Ingredient> ingredient;
 
